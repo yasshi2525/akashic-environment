@@ -9,6 +9,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "@akashic/akashic-cli": "^2.17.26",
     "express": "^4.20.0"
   }
 }
