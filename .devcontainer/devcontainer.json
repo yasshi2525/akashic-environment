@@ -1,5 +1,5 @@
 {
-  "name": "Akashic Unofficial Environment",
+  "name": "Akashic Environment",
   "image": "mcr.microsoft.com/devcontainers/javascript-node",
   "forwardPorts": [3000],
   "portsAttributes": {
@@ -8,5 +8,14 @@
       "onAutoForward": "openBrowser"
     }
   },
-  "postCreateCommand": "npm install"
+  "postCreateCommand": "npm install",
+  "postStartCommand": "nohup bash -c 'npm run start &'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "MS-CEINTL.vscode-language-pack-ja"
+      ]
+    }
+  }
 }
